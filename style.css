@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #ff6f61;
+}
+
+.contact {
+    background: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.home-content {
+    text-align: center;
+}
+
+.home-content h1 span {
+    color: #ff6f61;
+}
+
+.btn-box button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-box button:hover {
+    background-color: #e55b50;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-2 {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Education Section */
+.education, .internships, .projects {
+    background: #f9f9f9;
+    padding: 60px 0;
+}
+
+.edu-box, .intern-box, .proj-box {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education h2, .internships h2, .projects h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.contact-me {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55b50;
+}
+
+/* Footer Section */
+.footer {
+    background: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer .social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer .list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .list a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    .input-box {
+        flex-direction: column;
+    }
+}
